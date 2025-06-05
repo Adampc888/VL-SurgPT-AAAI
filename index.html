@@ -195,34 +195,33 @@
 
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h3 class="title is-3">Video Summary</h3>
-          <a href="https://nips.cc/virtual/2022/poster/55696">
-            <img src="static/images/neurips.png" alt="Video Summary">
-          </a>
+          <h3 class="title is-3">Dataset Introduction</h3>
+          <img src="static/images/dataset.jpg" alt="Dataset Visualization" style="width:100%;display:block;margin-bottom:16px;"/>
+          <div class="content has-text-justified" style="font-size:1rem;">
+            Data collection and annotation workflow for VL-SurgPT. (A) In vivo surgical setup using the da Vinci Xi system.
+            (B) Ground truth acquisition using Indocyanine Green (ICG) fluorescent markers under UV illumination. (C-D) Annotation
+            interface for point tracking and semantic labeling at 1 fps. (E) Coverage of 7 types of surgical instruments, 9 distinct visual
+            status descriptions, and 5 representative challenging scenarios across our dataset.
+          </div>
+        </div>
+      </div>
+
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3" id="annotation-workflow">Annotation Workflow</h3>
+        <div class="publication-video" style="padding-bottom: 50%">
+          <iframe src="https://drive.google.com/file/d/1mzwtJ5ZcE6KcJC0ZQX7A7DoWVVwKIqFL/preview" width="640" height="480" allow="autoplay" style="width:100%;"></iframe>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            A screen capture showing the typical annotation workflow and usage of the web-interface while annotating
+            three point tracks in a brief video. For brevity, we used points where the optical flow based tracker
+            worked exceptionally well and no further refinement was required, although this is not the general case.
+          </p>
         </div>
       </div>
     </div>
-
-
-    <div class="container is-max-desktop">
-
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h3 class="title is-3" id="annotation-workflow">Annotation Workflow</h3>
-          <div class="publication-video" style="padding-bottom: 50%">
-            <video id="teaser" autoplay controls muted loop playsinline height="100%">
-              <source src="https://storage.googleapis.com/dm-tapnet/annotation_screen_capture.mov" type="video/mp4">
-            </video>
-          </div>
-          <div class="content has-text-justified">
-            <p>
-              A screen capture showing the typical annotation workflow and usage of the web-interface while annotating
-              three point tracks in a brief video. For brevity, we used points where the optical flow based tracker
-              worked exceptionally well and no further refinement was required, although this is not the general case.
-            </p>
-          </div>
-        </div>
-      </div>
 
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
