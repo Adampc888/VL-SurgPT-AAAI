@@ -298,83 +298,40 @@
         </div>
       </div>
 
+
+      
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <div class="content">
-            <h3 class="title is-3">Improving Annotation with Flow based Tracker</h3>
-            <div class="container">
-              <div class="content has-text-justified">
-                <p>
-                  Annotating videos with high-quality point tracks is a very challenging task. We use an optical flow
-                  based point interpolation to aid the human annotators in this task. On the left below are annotations
-                  obtained without this tracker, and on the right with the tracker. The tracker results in more
-                  spatially consistent tracks, and also speeds up the annotation process by over 40%, aiding and
-                  simplifying the annotation effort substantially.
-                </p>
-              </div>            
-              <table style="width: 100%; border-collapse: collapse; border-spacing: 0;">
-                <tr>
-                  <td style="text-align:center; padding: 10px 0;"><b>Without flow tracker assist</b></td>
-                  <td style="text-align:center; padding: 10px 0;"><b>With flow tracker assist</b></td>
-                </tr>
-                <tr>
-                  <td colspan="2" style="padding: 0; text-align: center; padding-bottom: 20px;">
-                    <video width="1024" controls autoplay style="display: block; margin: 0 auto;">
-                      <source src="https://storage.googleapis.com/dm-tapnet/content/flow_tracker_comparison/blackswan.mp4" type="video/mp4">
-                    </video>
-                    <p style="margin: 0; padding-top: 10px; width: 100%; text-align: center;">
-                      Note the high-frequency jitter for the points on the swan's back and neck that occurs without assistance from optical flow.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="text-align:center; padding: 10px 0;"><b>Without flow tracker assist</b></td>
-                  <td style="text-align:center; padding: 10px 0;"><b>With flow tracker assist</b></td>
-                </tr>
-                <tr>
-                  <td colspan="2" style="padding: 0; text-align: center; padding-bottom: 20px;">
-                    <video width="1024" controls autoplay style="display: block; margin: 0 auto;">
-                      <source src="https://storage.googleapis.com/dm-tapnet/content/flow_tracker_comparison/camel.mp4" type="video/mp4">
-                    </video>
-                    <p style="margin: 0; padding-top: 10px; width: 100%; text-align: center;">
-                      Camera shake is particularly problematic, but optical flow compensates very well. It's almost unnoticeable when the flow interpolation is used, but without it, the points jump visibly three-quarters of the way through the video.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="text-align:center; padding: 10px 0;"><b>Without flow tracker assist</b></td>
-                  <td style="text-align:center; padding: 10px 0;"><b>With flow tracker assist</b></td>
-                </tr>
-                <tr>
-                  <td colspan="2" style="padding: 0; text-align: center; padding-bottom: 20px;">
-                    <video width="1024" controls autoplay style="display: block; margin: 0 auto;">
-                      <source src="https://storage.googleapis.com/dm-tapnet/content/flow_tracker_comparison/horsejump-high.mp4" type="video/mp4">
-                    </video>
-                    <p style="margin: 0; padding-top: 10px; width: 100%; text-align: center;">
-                      The flow tracker remains consistent even with fast motions, greatly improving the precision of the points on the horse's saddle.
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="text-align:center; padding: 10px 0;"><b>Without flow tracker assist</b></td>
-                  <td style="text-align:center; padding: 10px 0;"><b>With flow tracker assist</b></td>
-                </tr>
-                <tr>
-                  <td colspan="2" style="padding: 0; text-align: center; padding-bottom: 20px;">
-                    <video width="1024" controls autoplay style="display: block; margin: 0 auto;">
-                      <source src="https://storage.googleapis.com/dm-tapnet/content/flow_tracker_comparison/india.mp4" type="video/mp4">
-                    </video>
-                    <p style="margin: 0; padding-top: 10px; width: 100%; text-align: center;">
-                      Again the flow tracker is useful in compensating for camera motion and zoom.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              
+          <h3 class="title is-3">Visualization of point tracking (Tissue)</h3>
+          <div class="container">
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item">
+                <iframe width="100%" height="480" src="https://www.youtube.com/embed/0GQqcaQzdHs?autoplay=1&mute=1&loop=1&playlist=0GQqcaQzdHs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div style="font-size:0.95rem;color:#888;margin-top:8px;">
+              We show the results of tissue point tracking using TG-SurgPT (Ours) (Blue), Track-On (Red), and MFT (Green) in five different scenarios. In particular, we selected some relatively long videos for visualization (about 6-20 seconds).
             </div>
           </div>
         </div>
       </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h3 class="title is-3">Visualization of point tracking (Instrument)</h3>
+          <div class="container">
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item">
+                <iframe width="100%" height="480" src="https://www.youtube.com/embed/Sjum9KLjIxg?autoplay=1&mute=1&loop=1&playlist=Sjum9KLjIxg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div style="font-size:0.95rem;color:#888;margin-top:8px;">
+              We show the results of instrument point tracking using TG-SurgPT (Ours) (Blue), Track-On (Red), and MFT (Green) in five different scenarios.
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
