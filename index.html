@@ -222,33 +222,39 @@
     </div>
 
 
-
-
     
-           <div class="columns is-centered has-text-centered">
+          <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
               <h3 class="title is-3">Tissue Point Tracking with Vision Status</h3>
-              <div class="container">
-                <div class="columns is-multiline">
-                  <div class="column is-one-fifth">
-                    <iframe src="https://drive.google.com/file/d/1V9jR1PK7E6YA20UOGfpd6BZw1MbB-OFK/preview" width="100%" height="180" allow="autoplay" style="border:none;"></iframe>
-                  </div>
-                  <div class="column is-one-fifth">
-                    <iframe src="https://drive.google.com/file/d/1PIhawiMqNA_YiR3tiPUn9VDTEXH4_Oa5/preview" width="100%" height="180" allow="autoplay" style="border:none;"></iframe>
-                  </div>
-                  <div class="column is-one-fifth">
-                    <iframe src="https://drive.google.com/file/d/1ECQaI5xVypLo-zx5GWmJFGDYxa-dwfIK/preview" width="100%" height="180" allow="autoplay" style="border:none;"></iframe>
-                  </div>
-                  <div class="column is-one-fifth">
-                    <iframe src="https://drive.google.com/file/d/1nruchVO9qjE5kgTMhyvNJWdtUR40Ib7v/preview" width="100%" height="180" allow="autoplay" style="border:none;"></iframe>
-                  </div>
-                  <div class="column is-one-fifth">
-                    <iframe src="https://drive.google.com/file/d/1cp9dnedbMs2GPsFO04zgGqA6J4QQuFf2/preview" width="100%" height="180" allow="autoplay" style="border:none;"></iframe>
-                  </div>
+              <div class="container" style="position:relative;max-width:400px;margin:auto;">
+                <button id="prev-video" style="position:absolute;left:0;top:50%;transform:translateY(-50%);z-index:2;background:#eee;border:none;padding:8px 12px;border-radius:50%;font-size:1.5rem;">&#8592;</button>
+                <div id="video-carousel" style="text-align:center;">
+                  <iframe class="carousel-video" src="https://drive.google.com/file/d/1V9jR1PK7E6YA20UOGfpd6BZw1MbB-OFK/preview?autoplay=1&loop=1&mute=1" width="100%" height="240" allow="autoplay" style="border:none;display:block;"></iframe>
+                  <iframe class="carousel-video" src="https://drive.google.com/file/d/1PIhawiMqNA_YiR3tiPUn9VDTEXH4_Oa5/preview?autoplay=1&loop=1&mute=1" width="100%" height="240" allow="autoplay" style="border:none;display:none;"></iframe>
+                  <iframe class="carousel-video" src="https://drive.google.com/file/d/1ECQaI5xVypLo-zx5GWmJFGDYxa-dwfIK/preview?autoplay=1&loop=1&mute=1" width="100%" height="240" allow="autoplay" style="border:none;display:none;"></iframe>
+                  <iframe class="carousel-video" src="https://drive.google.com/file/d/1nruchVO9qjE5kgTMhyvNJWdtUR40Ib7v/preview?autoplay=1&loop=1&mute=1" width="100%" height="240" allow="autoplay" style="border:none;display:none;"></iframe>
+                  <iframe class="carousel-video" src="https://drive.google.com/file/d/1cp9dnedbMs2GPsFO04zgGqA6J4QQuFf2/preview?autoplay=1&loop=1&mute=1" width="100%" height="240" allow="autoplay" style="border:none;display:none;"></iframe>
                 </div>
+                <button id="next-video" style="position:absolute;right:0;top:50%;transform:translateY(-50%);z-index:2;background:#eee;border:none;padding:8px 12px;border-radius:50%;font-size:1.5rem;">&#8594;</button>
               </div>
             </div>
           </div>
+          <script>
+            const videos = document.querySelectorAll('.carousel-video');
+            let current = 0;
+            function showVideo(idx) {
+              videos.forEach((v, i) => v.style.display = i === idx ? 'block' : 'none');
+            }
+            document.getElementById('prev-video').onclick = function() {
+              current = (current - 1 + videos.length) % videos.length;
+              showVideo(current);
+            };
+            document.getElementById('next-video').onclick = function() {
+              current = (current + 1) % videos.length;
+              showVideo(current);
+            };
+            showVideo(current);
+          </script>
 
             <h3 class="title is-3">TAP-Vid-Kinetics</h3>
             <div class="container">
