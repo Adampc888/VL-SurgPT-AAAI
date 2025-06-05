@@ -226,7 +226,7 @@
           <div class="container">
             <div id="results-carousel" class="carousel results-carousel">
               <div class="item">
-                <iframe width="100%" height="480" src="https://www.youtube.com/embed/I7CMCLqgmEU?autoplay=1&mute=1&loop=1&playlist=I7CMCLqgmEU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe width="100%" height="480" src="https://www.youtube.com/embed/SQzmNO41R-o?autoplay=1&mute=1&loop=1&playlist=SQzmNO41R-o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               </div>
             </div>
             <div style="font-size:0.95rem;color:#888;margin-top:8px;">
@@ -258,36 +258,13 @@
 
 
 
-      <button id="toggle-images" style="margin-bottom:12px;" class="button is-small is-link">Show/Hide Results Images</button>
-      <div id="images-collapsible" style="display:none;">
-        <div id="images-scrollable" style="max-width: 900px; overflow-x: auto; white-space: nowrap; width: 100%; border-radius: 8px; border: 1px solid #eee; padding: 8px 0; margin-bottom: 24px; transition: max-width 0.3s;">
-          <img src="static/images/result_tissue_combine.jpg" alt="Dataset Visualization" style="height:320px; display:inline-block; margin-right:12px;"/>
-          <!-- 可以继续添加更多图片 -->
-        </div>
-        <button id="expand-images" class="button is-small" style="margin-bottom:12px;">Show All</button>
-        <div class="content has-text-justified" style="font-size:1rem;">
-          We compared the point tracking datasets on tissue: SuPer, Sem.SuPer, SurgT, STIR, SugrgMotion (Tissue); the key point datasets of surgical instruments: EndoVis15, Du et al., SurgPose, SurgMotion (Instrument). We have counted the results of 5 different surgical scenarios. From the graphs and tables, we can see that Cauterization Smoke has the least impact on the tracking results. Instrument Occlusion, Camera Jitter and Surface Reflection have similar impacts, while Tissue Deformation has the greatest impact.
-        </div>
+      <div style="overflow-x: auto; white-space: nowrap; width: 100%; border-radius: 8px; border: 1px solid #eee; padding: 8px 0; margin-bottom: 24px;">
+        <img src="static/images/result_tissue_combine.jpg" alt="Dataset Visualization" style="height:320px; display:inline-block; margin-right:12px;"/>
+        <!-- 可以继续添加更多图片 -->
       </div>
-      <script>
-        document.getElementById('toggle-images').onclick = function() {
-          var box = document.getElementById('images-collapsible');
-          box.style.display = box.style.display === 'none' ? 'block' : 'none';
-        };
-      
-        var expanded = false;
-        document.getElementById('expand-images').onclick = function() {
-          var scrollBox = document.getElementById('images-scrollable');
-          expanded = !expanded;
-          if (expanded) {
-            scrollBox.style.maxWidth = "100%";
-            this.textContent = "Collapse";
-          } else {
-            scrollBox.style.maxWidth = "900px";
-            this.textContent = "Show All";
-          }
-        };
-      </script>
+      <div class="content has-text-justified" style="font-size:1rem;">
+        We compared the point tracking datasets on tissue: SuPer, Sem.SuPer, SurgT, STIR, SugrgMotion (Tissue); the key point datasets of surgical instruments: EndoVis15, Du et al., SurgPose, SurgMotion (Instrument). We have counted the results of 5 different surgical scenarios. From the graphs and tables, we can see that Cauterization Smoke has the least impact on the tracking results. Instrument Occlusion, Camera Jitter and Surface Reflection have similar impacts, while Tissue Deformation has the greatest impact.
+      </div>
 
 
       <div class="columns is-centered has-text-centered">
