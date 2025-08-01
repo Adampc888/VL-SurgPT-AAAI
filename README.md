@@ -1,4 +1,4 @@
-# VL-SurgPT 
+# Bridging Vision and Language for Robust Context-Aware Surgical Point Tracking: The VL-SurgPT Dataset and Benchmark
 
 This is the repository that contains source code for the [VL-SurgPT  website](https://adampc888.github.io/VL-SurgPT-AAAI/).
 
