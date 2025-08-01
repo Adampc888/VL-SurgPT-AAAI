@@ -6,7 +6,7 @@
   <meta name="description" content="VL-SurgPT: Bridging Vision and Language for Surgical Point Tracking">
   <meta name="keywords" content="VL-SurgPT">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VL-SurgPT: Bridging Vision and Language for Surgical Point Tracking</title>
+  <title>Bridging Vision and Language for Robust Context-Aware Surgical Point Tracking: The VL-SurgPT Dataset and Benchmark</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -79,7 +79,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h2 class="title is-2 publication-title">VL-SurgPT: Bridging Vision and Language for Robust Surgical Point Tracking</h2>
+            <h2 class="title is-2 publication-title">Bridging Vision and Language for Robust Context-Aware Surgical Point Tracking: The VL-SurgPT Dataset and Benchmark</h2>
 
 
             <div class="column has-text-centered">
@@ -142,10 +142,10 @@
               </div>
               <div class="content has-text-justified">
                 <p>
-                  Accurate point tracking in surgical environments remains challenging due to complex visual conditions including smoke occlusion, specular reflections, and tissue deformation. Current surgical tracking datasets provide only visual coordinates, lacking semantic descriptions of why tracking fails under specific conditions. We present VL-SurgPT, a comprehensive multimodal dataset that bridges visual tracking with textual descriptions of point status.
-                  The dataset comprises 908 in vivo video clips, including 754 for tissue tracking (17,171 annotated points across five challenging scenarios) and 154 for instrument tracking (covering seven instrument types with detailed keypoint annotations). We establish comprehensive benchmarks using eight state-of-the-art trackers and propose TG-SurgPT, a text-guided tracking method that leverages semantic descriptions to improve robustness.
-                  Experimental results demonstrate significant improvements in tracking accuracy, particularly under adverse visual conditions where traditional methods struggle. This work represents the first large-scale vision-language dataset for surgical scene tracking, enabling development of semantically-aware tracking systems for computer-assisted surgery.
-                </p>
+                  Accurate point tracking in surgical environments remains challenging due to complex visual conditions, including smoke occlusion, specular reflections, and tissue deformation. While existing surgical tracking datasets provide coordinate information, they lack the semantic context necessary to understand tracking failure mechanisms.          
+                  We introduce VL-SurgPT, the first large-scale multimodal dataset that bridges visual tracking with textual descriptions of point status in surgical scenes. The dataset comprises 908 in vivo video clips, including 754 for tissue tracking (17,171 annotated points across five challenging scenarios) and 154 for instrument tracking (covering seven instrument types with detailed keypoint annotations).
+                  We establish comprehensive benchmarks using eight state-of-the-art tracking methods and propose TG-SurgPT, a text-guided tracking approach that leverages semantic descriptions to improve robustness in visually challenging conditions.
+                  Experimental results demonstrate that incorporating point status information significantly improves tracking accuracy and reliability, particularly in adverse visual scenarios where conventional vision-only methods struggle. By bridging visual and linguistic modalities, VL-SurgPT enables the development of context-aware tracking systems crucial for advancing computer-assisted surgery applications that can maintain performance even under challenging intraoperative conditions.
               </div>
             </div>
           </div>
