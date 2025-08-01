@@ -221,32 +221,55 @@
 
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h3 class="title is-3"></h3>
-          <div class="container">
-            <div id="results-carousel" class="carousel results-carousel">
-              <div class="item">
-                <iframe width="100%" height="240" src="https://www.youtube.com/embed/I7CMCLqgmEU?autoplay=1&mute=1&loop=1&playlist=I7CMCLqgmEU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
-            </div>
+          <h3 class="title is-3" id="annotation-workflow">VL-SurgPT Dataset Visualization</h3>
+          <div class="publication-video" style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden;">
+            <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls autoplay muted loop>
+              <source src="static/video/dataset_vis.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
-        </div>
-      </div>        
-
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h3 class="title is-3">VL-SurgPT Dataset Visualization</h3>
-          <div class="container">
-            <div id="results-carousel" class="carousel results-carousel">
-              <div class="item">
-                <iframe width="100%" height="480" src="https://www.youtube.com/embed/qIiewwUYeQQ?autoplay=1&mute=1&loop=1&playlist=qIiewwUYeQQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div style="font-size:0.95rem;color:#888;margin-top:8px;">
-              Shows the location and status of our annotation points in 5 different surgical scenes and on 7 different instruments
-            </div>
+          <div class="content has-text-justified">
+            <p>
+              Shows the location and status of our annotation points in 5 different surgical scenes and on 7 different instruments.
+            </p>
           </div>
         </div>
       </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h3 class="title is-3" id="annotation-workflow">Visualization of point tracking (Tissue)</h3>
+          <div class="publication-video" style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden;">
+            <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls autoplay muted loop>
+              <source src="static/video/Tissue.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              We show the results of tissue point tracking using TG-SurgPT (Ours) (Blue), Track-On (Red), and MFT (Green) in five different scenarios. In particular, we selected some relatively long videos for visualization (about 6-20 seconds).            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h3 class="title is-3" id="annotation-workflow">Visualization of point tracking (Instrument)</h3>
+          <div class="publication-video" style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden;">
+            <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls autoplay muted loop>
+              <source src="static/video/Instrument.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              We show the results of instrument point tracking using TG-SurgPT (Ours) (Blue), Track-On (Red), and MFT (Green) in five different scenarios.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    
 
 
 
@@ -261,87 +284,14 @@
           </div>
         </div>
       </div>
-      
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h3 class="title is-3" id="Metrics">Metrics Details</h3>
-          <div style="max-width:900px; height:300px; overflow-y:auto; border:1px solid #eee; border-radius:8px; margin-bottom:16px; padding:8px; background:#fafafa;">
-            <img src="static/images/Metrics.jpg" alt="Dataset Visualization" style="width:100%; display:block; margin-bottom:12px;"/>
-          </div>
-          <div class="content has-text-justified" style="font-size:1rem;">
-            <!-- 可在此处添加Metrics Details的文字说明 -->
-          </div>
-        </div>
-      </div>
 
-
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h3 class="title is-3" id="Baseline_Experiments">Supplementary Baseline Experiments</h3>
-          <div style="max-width:900px; height:300px; overflow-y:auto; overflow-x:auto; border:1px solid #eee; border-radius:8px; margin-bottom:16px; padding:8px; background:#fafafa;">
-            <img src="static/images/result_tissue_combine.jpg" alt="Dataset Visualization" style="width:auto; max-width:100%; display:block; margin-bottom:12px;"/>
-            <!-- 可以继续添加更多图片 -->
-          </div>
-          <div class="content has-text-justified" style="font-size:1rem;">
-            We compared the point tracking datasets on tissue: SuPer, Sem.SuPer, SurgT, STIR, SugrgMotion (Tissue); the key point datasets of surgical instruments: EndoVis15, Du et al., SurgPose, SurgMotion (Instrument). We have counted the results of 5 different surgical scenarios. From the graphs and tables, we can see that Cauterization Smoke has the least impact on the tracking results. Instrument Occlusion, Camera Jitter and Surface Reflection have similar impacts, while Tissue Deformation has the greatest impact.
-          </div>
-        </div>
-      </div>
-
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h3 class="title is-3" id="ablation_study">Supplementary Ablation Study</h3>
-          <div style="max-width:900px; height:300px; overflow-y:auto; border:1px solid #eee; border-radius:8px; margin-bottom:16px; padding:8px; background:#fafafa;">
-            <img src="static/images/Ablation_Study.jpg" alt="Dataset Visualization" style="width:100%;display:block;margin-bottom:12px;"/>
-          </div>
-          <div class="content has-text-justified" style="font-size:1rem;">
-            <!-- 可在此处添加Ablation Study的文字说明 -->
-          </div>
-        </div>
-      </div>
-
-
-      
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h3 class="title is-3">Visualization of point tracking (Tissue)</h3>
-          <div class="container">
-            <div id="results-carousel" class="carousel results-carousel">
-              <div class="item">
-                <iframe width="100%" height="480" src="https://www.youtube.com/embed/0GQqcaQzdHs?autoplay=1&mute=1&loop=1&playlist=0GQqcaQzdHs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div style="font-size:0.95rem;color:#888;margin-top:8px;">
-              We show the results of tissue point tracking using TG-SurgPT (Ours) (Blue), Track-On (Red), and MFT (Green) in five different scenarios. In particular, we selected some relatively long videos for visualization (about 6-20 seconds).
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h3 class="title is-3">Visualization of point tracking (Instrument)</h3>
-          <div class="container">
-            <div id="results-carousel" class="carousel results-carousel">
-              <div class="item">
-                <iframe width="100%" height="480" src="https://www.youtube.com/embed/-OTjjJegdT0?autoplay=1&mute=1&loop=1&playlist=-OTjjJegdT0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div style="font-size:0.95rem;color:#888;margin-top:8px;">
-              We show the results of instrument point tracking using TG-SurgPT (Ours) (Blue), Track-On (Red), and MFT (Green) in five different scenarios.
-            </div>
-          </div>
-        </div>
-      </div>
 
 
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h3 class="title is-3">Licensing</h3>
           <p>
-            The original dataset and annotations of VL-SurgTPT are released under the Creative Commons Attribution (BY) license and cannot be used for commercial purposes. We provide a sample of the dataset in the <a
-                href="https://github.com/SzuPc/VL-SurgPT-Dataset">Github</a> section for reference. After the ethical review, we will make our entire dataset public, and a written application form is required to obtain the data.
-        </div>
+            The original dataset and annotations of VL-SurgTPT cannot be used for commercial purposes.
       </div>
 
       <!-- <div class="columns is-centered has-text-centered">
